@@ -1,0 +1,371 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><meta name="theme-color" content="#0F172A"><title>五维测评系统 - 注册</title><meta name="description" content="入伍前心理测评、征兵体检标准查询、役前体能训练评分，帮助青少年了解参军条件科学备考。"><meta property="og:title" content="入伍心理测试 | 体检标准 | 体能评分"><meta property="og:description" content="入伍前心理测评、征兵体检标准查询、役前体能训练评分，帮助青少年了解参军条件科学备考。"><meta property="og:image" content="https://wuweisixing.cn/assets/og-image.png"><meta property="og:url" content="https://wuweisixing.cn/register"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="keywords" content="wuweisixing,五维四型,五维测评系统,征兵机考,心理测试,役前训练,体能评分,测试题库,入伍,当兵,应征青年,职业适应性,参军测评,入伍心理测试,征兵体检标准,参军,MCC人格测验,入伍测试,SBTI人格测试"><link rel="canonical" href="https://wuweisixing.cn/register.html"><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.png"><link rel="icon" href="/assets/favicon.png"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+:root{
+  --primary:#0F172A;--primary-light:#1E3A8A;
+  --accent:#3B82F6;--accent-dark:#1E40AF;
+  --gold:#D4A843;--gold-light:#E8C96A;
+  --success:#22C55E;
+  --bg:#F8FAFC;--card:#FFFFFF;
+  --text:#1E293B;--text-light:#64748B;--text-lighter:#94A3B8;
+  --border:#E2E8F0;
+  --radius:16px;--radius-sm:10px;--radius-lg:24px;
+  --shadow:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
+  --shadow-md:0 4px 20px rgba(0,0,0,.08);
+  --shadow-lg:0 10px 40px rgba(0,0,0,.12);
+  --header-h:56px;
+}
+[data-theme="dark"]{--primary:#5A9CFF;--primary-light:#3A7CDF;--accent:#5A9CFF;--accent-dark:#3A7CDF;--text:#e0e0e0;--text-light:#aaa;--text-lighter:#888;--bg:#1a1a2e;--card:#222238;--border:#2e2e42}
+[data-theme="green"]{--primary:#3C6B3C;--primary-light:#2A4A2A;--accent:#5A8A5A;--accent-dark:#3A6A3A;--bg:#EFF3EF;--card:#fff;--border:#C5D2C5}
+[data-theme="wechat"]{--primary:#07C160;--primary-light:#059A4A;--accent:#07C160;--accent-dark:#059A4A;--bg:#F0F7F2;--card:#fff;--border:#BFDFC8}
+[data-theme="pink"]{--primary:#C47888;--primary-light:#A05868;--accent:#E8A0B0;--accent-dark:#C47888;--bg:#FDF5F7;--card:#fff;--border:#E5CFD5}
+body{font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Source Han Sans CN','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
+
+/* ===== Navbar ===== */
+.navbar{position:fixed;top:max(0px, env(safe-area-inset-top, 0px));left:0;right:0;height:var(--header-h);background:rgba(15,23,42,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.06);z-index:1000;display:flex;align-items:center;padding:0 16px;justify-content:space-between}
+.navbar-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.navbar-logo{width:32px;height:32px;border-radius:8px;object-fit:cover}
+.navbar-name{font-size:15px;font-weight:700;color:#fff;letter-spacing:1px}
+.navbar-right{display:flex;align-items:center;gap:8px}
+.navbar-right a{font-size:13px;padding:7px 14px;border-radius:8px;text-decoration:none;transition:all .2s;font-weight:500}
+.btn-login{color:#fff;border:1px solid rgba(255,255,255,.25);background:transparent}
+.btn-reg{background:linear-gradient(135deg,var(--accent),var(--accent-dark));color:#fff;border:none;font-weight:600}
+
+/* ===== Page Banner ===== */
+.page-banner{margin-top:calc(var(--header-h) + env(safe-area-inset-top, 0px));background:linear-gradient(135deg,var(--primary) 0%,var(--primary-light) 100%);padding:28px 20px;text-align:center;position:relative;overflow:hidden}
+.page-banner::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 40%,rgba(59,130,246,.15) 0%,transparent 50%);animation:bannerGlow 15s ease-in-out infinite alternate}
+@keyframes bannerGlow{0%{transform:translate(0,0)}100%{transform:translate(-3%,2%)}}
+.page-banner-content{position:relative;z-index:2}
+.page-banner h1{font-size:22px;font-weight:700;color:#fff;margin-bottom:6px;letter-spacing:1px}
+.page-banner p{font-size:13px;color:rgba(255,255,255,.55)}
+.page-banner a{color:var(--gold);text-decoration:none;font-weight:600}
+
+/* ===== Main Content ===== */
+.main-content{flex:1;display:flex;justify-content:center;align-items:flex-start;padding:32px 16px 48px;width:100%}
+
+/* ===== Form Card ===== */
+.form-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-lg);padding:32px 24px;width:100%;max-width:460px;border:1px solid var(--border)}
+.form-card h2{font-size:22px;font-weight:700;color:var(--primary);text-align:center;margin-bottom:4px}
+.form-subtitle{font-size:14px;color:var(--text-light);text-align:center;margin-bottom:24px}
+
+/* ===== Error Message ===== */
+.error-msg{background:#FEF2F2;border:1px solid #FECACA;color:#DC2626;padding:10px 14px;border-radius:var(--radius-sm);font-size:13px;margin-bottom:16px;display:none;line-height:1.5}
+
+/* ===== Form Group ===== */
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:14px;font-weight:600;color:var(--text);margin-bottom:6px}
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"],
+.form-group input[type="tel"]{width:100%;padding:12px 14px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:16px;outline:none;background:var(--bg);transition:.2s;box-sizing:border-box;color:var(--text)}
+.form-group input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(59,130,246,.12)}
+.form-group input::placeholder{color:var(--text-lighter)}
+.field-hint{font-size:12px;color:var(--text-lighter);margin-top:4px}
+
+/* ===== Select ===== */
+select.form-input{width:100%;padding:12px 14px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:15px;outline:none;background:var(--bg);transition:.2s;box-sizing:border-box;color:var(--text);appearance:auto}
+select.form-input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(59,130,246,.12)}
+
+/* ===== Password Row ===== */
+.pwd-row{display:flex;align-items:stretch;gap:0}
+.pwd-row input{flex:1;border-radius:var(--radius-sm) 0 0 var(--radius-sm)!important}
+.pwd-toggle{width:48px;min-width:48px;border:2px solid var(--border);border-left:none;border-radius:0 var(--radius-sm) var(--radius-sm) 0;background:var(--bg);cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--text-lighter);font-size:13px;transition:.2s;padding:0;user-select:none}
+.pwd-toggle:hover{background:rgba(59,130,246,.08);color:var(--accent)}
+
+/* ===== SMS Row ===== */
+.sms-row{display:flex;gap:10px}
+.sms-row input{flex:1}
+.sms-row .btn-code{width:130px;flex-shrink:0;padding:12px 0;background:radial-gradient(circle at top left,rgba(255,255,255,.28),transparent 40%),linear-gradient(135deg,#0066cc 0%,#4D9FFF 100%);color:#fff;border:none;border-radius:var(--radius-sm);font-size:14px;font-weight:600;cursor:pointer;transition:.2s;white-space:nowrap;position:relative;overflow:hidden}
+.sms-row .btn-code:hover{box-shadow:0 4px 16px rgba(59,130,246,.4)}
+.sms-row .btn-code:disabled{opacity:.5;cursor:not-allowed}
+.sms-row .btn-code::after{content:'';position:absolute;top:0;left:-70%;width:60%;height:100%;background:linear-gradient(110deg,transparent 0%,rgba(255,255,255,.25) 25%,rgba(255,255,255,.4) 37%,rgba(255,255,255,.25) 50%,transparent 100%);transform:skewX(-20deg);animation:wave-sweep 3.5s ease-in-out infinite;pointer-events:none}
+@keyframes wave-sweep{0%{left:-70%}50%{left:120%}100%{left:120%}}
+
+/* ===== Code Input ===== */
+.code-input{text-align:center;font-size:24px;letter-spacing:8px;font-family:'Courier New',monospace}
+.timer-text{color:#DC2626;font-size:13px;margin-top:6px;text-align:center}
+.resend-btn{background:none;border:1px solid var(--accent);color:var(--accent);padding:8px 16px;border-radius:6px;cursor:pointer;font-size:13px;transition:.3s;display:block;margin:6px auto}
+.resend-btn:hover{background:rgba(59,130,246,.08)}
+.resend-btn:disabled{opacity:.5;cursor:not-allowed}
+
+/* ===== Info Boxes ===== */
+.info-box{margin-top:8px;padding:10px 14px;border-radius:var(--radius-sm);text-align:center;font-size:13px;line-height:1.6}
+.info-box-blue{background:rgba(59,130,246,.06);border:1px solid rgba(59,130,246,.15);color:var(--accent)}
+.info-box-yellow{background:rgba(212,168,67,.08);border:1px solid rgba(212,168,67,.2);color:#92400E}
+.info-box a.btn-link{display:inline-block;padding:4px 16px;background:radial-gradient(circle at top left,rgba(255,255,255,.28),transparent 40%),linear-gradient(135deg,#0066cc 0%,#4D9FFF 100%);color:#fff;border-radius:20px;font-size:13px;font-weight:600;text-decoration:none;margin-left:4px;transition:.2s}
+.info-box a.btn-link:hover{box-shadow:0 4px 12px rgba(59,130,246,.3)}
+.method-tab{flex:1;padding:10px 8px;border:2px solid var(--border);border-radius:var(--radius-sm);background:var(--bg);font-size:13px;font-weight:600;cursor:pointer;transition:.2s;text-align:center;color:var(--text-light)}.method-tab:hover{background:rgba(59,130,246,.06);border-color:var(--accent)}.method-tab.active{background:var(--primary-light);color:#fff;border-color:var(--primary-light)}
+
+/* ===== Checkbox ===== */
+.terms-label{display:flex;align-items:flex-start;gap:8px;cursor:pointer;font-weight:400;font-size:13px;color:var(--text-light);line-height:1.5}
+.terms-label input[type="checkbox"]{margin-top:3px;width:16px;height:16px;accent-color:var(--accent);flex-shrink:0}
+.terms-label a{color:var(--accent);text-decoration:underline}
+
+/* ===== Submit Button ===== */
+.form-btn{width:100%;padding:14px;background:radial-gradient(circle at top left,rgba(255,255,255,.28),transparent 40%),linear-gradient(135deg,#0066cc 0%,#4D9FFF 100%);color:#fff;border:none;border-radius:var(--radius-sm);font-size:16px;font-weight:700;cursor:pointer;transition:all .3s;letter-spacing:1px;position:relative;overflow:hidden;min-height:48px}
+.form-btn:hover{box-shadow:0 6px 24px rgba(59,130,246,.4);transform:translateY(-1px)}
+.form-btn:active{transform:scale(.98)}
+.form-btn:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.form-btn::after{content:'';position:absolute;top:0;left:-70%;width:60%;height:100%;background:linear-gradient(110deg,transparent 0%,rgba(255,255,255,.25) 25%,rgba(255,255,255,.4) 37%,rgba(255,255,255,.25) 50%,transparent 100%);transform:skewX(-20deg);animation:wave-sweep 3.5s ease-in-out infinite;pointer-events:none}
+
+/* ===== Form Links ===== */
+.form-links{display:flex;justify-content:center;gap:16px;margin-top:20px;font-size:14px}
+.form-links a{color:var(--accent);text-decoration:none;font-weight:500;transition:.2s}
+.form-links a:hover{color:var(--accent-dark)}
+.form-links span{color:var(--border)}
+
+/* ===== Captcha Modal ===== */
+.captcha-mask{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);z-index:10000;display:flex;justify-content:center;align-items:center;visibility:hidden;opacity:0;transition:.3s}
+.captcha-mask.show{visibility:visible;opacity:1}
+.captcha-modal{background:var(--card);border-radius:var(--radius);padding:28px 24px 20px;max-width:380px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.captcha-modal h3{margin:0 0 6px;font-size:17px;color:var(--text)}
+.captcha-modal .cap-desc{font-size:13px;color:var(--text-lighter);margin-bottom:16px}
+.cap-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:16px}
+.cap-btn{width:52px;height:52px;border-radius:12px;border:2px solid var(--border);background:var(--bg);font-size:22px;font-weight:700;color:var(--text);cursor:pointer;transition:.2s;display:flex;align-items:center;justify-content:center}
+.cap-btn:hover{background:rgba(59,130,246,.08);border-color:var(--accent)}
+.cap-btn.selected{background:var(--primary);color:#fff;border-color:var(--accent);cursor:default}
+.cap-btn.wrong{background:#FEF2F2;color:#DC2626;border-color:#DC2626}
+.cap-btn.ok{background:#F0FDF4;color:var(--success);border-color:var(--success)}
+.cap-order{display:flex;gap:6px;justify-content:center;margin-bottom:14px;min-height:30px}
+.cap-order span{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:6px;background:rgba(59,130,246,.08);color:var(--accent);font-size:16px;font-weight:700}
+.cap-order .arrow{background:none;color:var(--text-lighter);width:16px}
+.cap-close{padding:8px 20px;background:var(--bg);border:none;border-radius:8px;cursor:pointer;font-size:13px;color:var(--text-light)}
+.cap-close:hover{background:var(--border)}
+
+/* ===== Footer ===== */
+.footer{background:var(--primary);padding:36px 16px 24px;text-align:center}
+.footer-inner{max-width:600px;margin:0 auto}
+.footer-brand{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:16px}
+.footer-brand .logo{width:28px;height:28px;background:linear-gradient(135deg,var(--accent),var(--accent-dark));border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:14px;color:#fff;font-weight:700}
+.footer-brand .name{font-size:14px;font-weight:600;color:#fff;letter-spacing:1px}
+.footer-links{display:flex;justify-content:center;gap:16px;margin-bottom:16px;flex-wrap:wrap}
+.footer-links a{color:rgba(255,255,255,.45);text-decoration:none;font-size:12px;transition:color .2s;padding:4px 0}
+.footer-links a:hover{color:rgba(255,255,255,.7)}
+.footer-divider{height:1px;background:rgba(255,255,255,.08);margin-bottom:16px}
+.footer-disclaimer{font-size:11px;color:rgba(255,255,255,.25);line-height:1.8;max-width:500px;margin:0 auto 12px}
+.footer-copy{font-size:11px;color:rgba(255,255,255,.15)}
+
+
+[data-theme="dark"] .fb-tabs{border-bottom-color:var(--border)}
+[data-theme="dark"] .fb-tab{color:var(--text-lighter)}
+[data-theme="dark"] .fb-body h4{color:var(--text)}
+[data-theme="dark"] .fb-body p{color:var(--text-light)}
+
+/* ===== Responsive ===== */
+@media(min-width:640px){
+  .page-banner h1{font-size:26px}
+  .page-banner p{font-size:14px}
+  .form-card{padding:40px 32px}
+  .form-card h2{font-size:24px}
+}
+@media(min-width:1024px){
+  :root{--header-h:64px}
+  .navbar{padding:0 40px}
+  .navbar-name{font-size:16px}
+  .page-banner{padding:40px 20px}
+  .page-banner h1{font-size:28px}
+  .main-content{padding:48px 20px 64px}
+  .form-card{padding:48px 40px;max-width:500px}
+  .form-card h2{font-size:26px}
+  .footer{padding:48px 24px 32px}
+  .footer-brand .logo{width:32px;height:32px;font-size:16px}
+  .footer-brand .name{font-size:15px}
+  .footer-links{gap:24px;margin-bottom:24px}
+  .footer-links a{font-size:13px}
+  .footer-disclaimer{font-size:12px}
+}
+.field-error{font-size:12px;color:#DC2626;margin-top:4px;display:none}.field-error.show{display:block}.field-success{font-size:12px;color:#22C55E;margin-top:4px;display:none}.field-success.show{display:block}</style><link rel="manifest" href="/app/pwa/site.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><script>(function(){window._isWechat=/MicroMessenger|Wechat/i.test(navigator.userAgent);var t=!1,e=!1;try{e=!!sessionStorage.getItem("_wx_skip")}catch{}t&&window._isWechat&&!e&&location.pathname.indexOf("wx-redirect")<0&&location.replace("/wx-redirect.html?to="+encodeURIComponent(location.pathname+location.search))})();
+</script></head><body><script src="/js/bundle.0627626f.js"></script><nav class="navbar"><a href="/home" class="navbar-brand"><img src="/app/icons/icon-192.png" class="navbar-logo" alt=""><span class="navbar-name">五维测评中心</span></a><div class="navbar-right"><a href="/login" class="btn-login">登录</a><a href="/register" class="btn-reg">注册</a></div></nav><div class="page-banner"><div class="page-banner-content"><h1>用户注册</h1><p><a href="/home">← 返回新版首页</a> | <a href="/index">旧版首页</a></p></div></div><div class="main-content"><div class="form-card"><h2>创建账号</h2><p class="form-subtitle">还不想注册？先<a href="/trial" style="color:var(--accent);font-weight:700;text-decoration:underline">免费体验85题（含正式体检上站）</a>，感受后再决定。</p><div class="error-msg" id="errorMsg"></div><form onsubmit="doRegister(event)"><div class="form-group"><label>账号/用户名 <span style="color:var(--text-lighter);font-weight:400">（2-20位中文/字母/数字）</span></label><input type="text" id="regUsername" placeholder="输入账号或用户名，如：张三、wangwu" required minlength="2" maxlength="20" autocomplete="username" enterkeyhint="next" onblur="checkUsername()"><span class="field-error" id="usernameError"></span><span class="field-success" id="usernameOk"></span></div><div class="form-group"><label>密码 <span style="color:var(--text-lighter);font-weight:400">（至少6位，字母/数字/符号均可）</span></label><div class="pwd-row"><input type="password" id="regPassword" placeholder="至少6位，建议字母+数字组合" autocomplete="new-password" required minlength="6"><button type="button" class="pwd-toggle" onclick="UiKit.togglePassword(document.getElementById('regPassword'),this)" tabindex="-1" title="显示密码">显示</button></div></div><div class="info-box info-box-warning" style="margin-bottom:14px;padding:12px 14px;background:#FFF8E1;border:1px solid #FFE082;border-radius:10px;font-size:13px;color:#6D4C00;line-height:1.6"><strong>⚠️ 建议填写邮箱或手机号用于找回密码。</strong>如不填写，账号一旦丢失将永远无法找回。手机和邮箱只需验证一项即可。</div><div style="display:flex;gap:8px;margin-bottom:12px"><button type="button" class="method-tab active" id="tabEmail" onclick="switchMethod('email')">📧 邮箱验证</button><button type="button" class="method-tab" id="tabPhone" onclick="switchMethod('phone')">📱 手机验证</button><button type="button" class="method-tab" id="tabNone" onclick="switchMethod('none')">✖ 不验证</button></div><div id="emailSection"><div class="form-group"><label>邮箱</label><div class="sms-row"><input type="email" id="regEmail" placeholder="输入邮箱，用于找回密码" maxlength="100"><button type="button" class="btn-code" id="sendEmailCodeBtn" onclick="openEmailCaptcha()">获取验证码</button></div></div><div class="form-group" id="emailCodeGroup" style="display:none"><label>邮箱验证码</label><input type="text" id="regEmailCode" class="code-input" placeholder="输入6位邮箱验证码" maxlength="6" inputmode="numeric" autocomplete="one-time-code" enterkeyhint="next"><div class="timer-text" id="emailTimer" style="color:#DC2626;font-size:13px;margin-top:4px;text-align:center"></div><button type="button" class="resend-btn" id="resendEmailBtn" disabled onclick="resendEmailCode()">重新发送</button></div></div><div id="phoneSection" style="display:none"><div class="form-group"><label>手机号</label><div class="sms-row"><input type="tel" id="regPhone" placeholder="输入手机号，用于找回密码" maxlength="11" autocomplete="tel"><button type="button" class="btn-code" id="sendCodeBtn" onclick="phoneSendCode()">获取验证码</button></div></div><div class="form-group" id="smsCodeGroup" style="display:none"><label>短信验证码</label><input type="text" id="regSmsCode" class="code-input" placeholder="输入6位短信验证码" maxlength="6" inputmode="numeric" autocomplete="one-time-code" enterkeyhint="done"><div class="timer-text" id="smsTimer" style="color:#DC2626;font-size:13px;margin-top:4px;text-align:center"></div></div></div><div class="form-group" style="margin-bottom:16px"><label class="terms-label"><input type="checkbox" id="agreeTerms"><span>我已阅读并同意<a href="/terms" target="_blank">《用户协议》</a>和<a href="/privacy" target="_blank">《隐私政策》</a>，并遵守上述协议及网站页面内容</span></label></div><input type="hidden" id="refCode" value=""><button type="submit" class="form-btn" id="registerBtn">注册</button></form><div class="form-links"><a href="/login">已有账号？去登录</a><span>|</span><a href="/index">返回首页</a></div><div style="margin-top:14px;padding:12px 14px;background:#FFF4E5;border:1px solid #FFC069;border-left:4px solid #E67E22;border-radius:10px;font-size:12px;color:#6D4C00;line-height:1.7">🔒 <strong style="color:#B45309">账号使用须知：</strong>账号仅限本人使用（一人一号），严禁出借、合租、转售；此类违规后自动封禁一律不予处理，请勿共用账号。</div></div></div><div class="footer"><p>2027五维模拟测评系统版权所有</p><p style="color:var(--text-light);font-size:11px;margin-top:6px"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener" style="color:var(--text-light);text-decoration:none">苏ICP备2026054342号</a></p><p style="color:var(--text-light);font-size:12px;margin-top:4px;line-height:1.6">本站/软件所有开发和运营人员都是退伍军人，是收集以网络和ai公开资料相关内容制作整理的能力测评与训练辅助工具，不属于、不参与任何征兵审核及录取工作，仅中国境内网络可访问，测评结果仅供参考。</p><p style="color:var(--text-light);font-size:11px;margin-top:6px;line-height:1.6">本站内容仅供个人学习交流内部使用，包含不限于ai生成、整理、收集网络公开题库，如有侵权请联系，并请在下载查看等操作后24小时内删除<br></p><p style="color:var(--text-light);font-size:11px;margin-top:8px;line-height:1.6;border-top:1px solid rgba(0,0,0,.08);padding-top:8px"><strong>⚠️ 版权声明：</strong>本平台全部内容（包括但不限于题库、测评算法、页面设计）均受著作权法保护。未经授权，禁止任何形式的复制、转载、摘编、建立镜像或用于商业用途。侵权必究。｜<a href="/copyright" style="color:var(--accent);text-decoration:underline">版权声明</a></p></div><div class="captcha-mask" id="captchaMask"><div class="captcha-modal"><h3>🔒 验证</h3><p class="cap-desc">请按顺序点击下方对应汉字完成验证</p><div id="capOrder" style="font-size:18px;font-weight:700;color:var(--accent);margin-bottom:16px;letter-spacing:2px"></div><div id="capBtns" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:12px"></div><div id="capMsg" style="font-size:14px;font-weight:600;min-height:22px"></div></div></div><script>
+if (Auth.isLoggedIn()) { location.href = '/index'; }
+let smsTimer = null, emailTimer = null, smsCountdown = 60, emailCountdown = 60, captchaVerified = false, _captchaCallback = null;
+const CAPTCHA_CHARS = ["人","大","小","中","上","下","左","右","前","后","开","关","有","无","是","否","金","木","水","火","土","天","风","云","龙","虎"];
+let capItems = [], capAnswer = [], capClicked = [];
+function getEl(id) { return document.getElementById(id); }
+function openCaptcha(callback) {
+  _captchaCallback = callback; captchaVerified = false; capClicked = [];
+  var shuffled = [...CAPTCHA_CHARS].sort(function(){return Math.random()-0.5}).slice(0,8);
+  var answer = [shuffled[0], shuffled[1], shuffled[2]].sort(function(){return Math.random()-0.5});
+  capItems = shuffled; capAnswer = answer;
+  var oh = "";
+  answer.forEach(function(c,i){ if(i>0) oh += '<span class="arrow">&#8594;</span>'; oh += '<span>' + c + '</span>'; });
+  getEl("capOrder").innerHTML = oh;
+  var bh = "";
+  shuffled.forEach(function(c){ bh += '<button type="button" class="cap-btn" id="capBtn_' + c + '" onclick="clickCap(\'' + c + '\',this)">' + c + '</button>'; });
+  getEl("capBtns").innerHTML = bh;
+  getEl("capMsg").textContent = "";
+  getEl("captchaMask").classList.add("show");
+}
+function clickCap(c, btn) {
+  var idx = capClicked.length;
+  if (c === capAnswer[idx]) {
+    btn.className = "cap-btn selected"; capClicked.push(c);
+    if (capClicked.length === 3) {
+      captchaVerified = true; getEl("capMsg").textContent = "✓ 验证通过";
+      getEl("capMsg").style.color = "#22C55E";
+      setTimeout(function(){ getEl("captchaMask").classList.remove("show"); if (_captchaCallback) _captchaCallback(); }, 500);
+    }
+  } else {
+    btn.className = "cap-btn wrong"; getEl("capMsg").textContent = "顺序不对，请重新点击";
+    getEl("capMsg").style.color = "#DC2626";
+    setTimeout(function(){ capClicked = []; document.querySelectorAll(".cap-btn").forEach(function(b){ b.className = "cap-btn"; }); }, 600);
+  }
+}
+function startSmsTimer() {
+  if (typeof smsTimer === 'function') smsTimer();
+  const mainBtn = getEl('sendCodeBtn'); mainBtn.disabled = true;
+  smsTimer = Utils.countdown(60, function(r) { mainBtn.textContent = r + 's'; }, function() { mainBtn.disabled = false; mainBtn.textContent = '重新获取'; });
+}
+function startEmailTimer() {
+  if (typeof emailTimer === 'function') emailTimer();
+  const mainBtn = getEl('sendEmailCodeBtn'); mainBtn.disabled = true;
+  emailTimer = Utils.countdown(60, function(r) { mainBtn.textContent = r + 's'; }, function() { mainBtn.disabled = false; mainBtn.textContent = '重新获取'; });
+}
+async function checkAccountExists(account) {
+  try { const res = await fetch('/api/auth/check-account?account=' + encodeURIComponent(account)); const data = await res.json(); return data.exists === true; }
+  catch (e) { return false; }
+}
+function phoneSendCode() {
+  const phone = getEl('regPhone').value.trim();
+  if (!phone) { showError('请先填写手机号'); return; }
+  if (!/^1\d{10}$/.test(phone)) { showError('请输入有效的11位手机号'); return; }
+  openCaptcha(async function() {
+    const exists = await checkAccountExists(phone);
+    if (exists) { showError('该手机号已注册，请直接登录'); return; }
+    getEl('smsCodeGroup').style.display = 'block'; startSmsTimer(); await sendSmsCode();
+  });
+}
+function openEmailCaptcha() {
+  const email = getEl("regEmail").value.trim();
+  if (!email) { showError("请先填写邮箱"); return; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showError("请输入有效的邮箱地址"); return; }
+  openCaptcha(async function() {
+    const exists = await checkAccountExists(email);
+    if (exists) { showError('该邮箱已注册，请直接登录'); return; }
+    getEl('emailCodeGroup').style.display = 'block'; startEmailTimer(); await sendEmailCode();
+  });
+}
+async function sendSmsCode() {
+  const phone = getEl('regPhone').value.trim(); if (!phone) return;
+  try {
+    const res = await fetch('/api/auth/send-sms-code', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ phone }) });
+    const ct = res.headers.get('content-type') || '';
+    if (!ct.includes('json')) { showError('短信服务暂时不可用，请使用邮箱注册'); return; }
+    const data = await res.json();
+    if (data.success) { showError(''); showToast('验证码已发送到手机', 'success', 4000); setTimeout(function(){getEl('regSmsCode').focus();},100); }
+    else { showError(data.msg || '短信发送失败，请检查手机号。如短信服务不可用，请使用邮箱验证'); }
+  } catch (e) { showError('短信服务暂时不可用，请使用邮箱注册'); }
+}
+async function sendEmailCode() {
+  const email = getEl('regEmail').value.trim(); if (!email) return;
+  try {
+    const res = await fetch('/api/auth/send-verify-code', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email }) });
+    const ct = res.headers.get('content-type') || '';
+    if (!ct.includes('json')) { showError('邮件服务暂时不可用，请稍后重试'); return; }
+    const data = await res.json();
+    if (data.success) { showError(''); showToast('验证码已发送到邮箱', 'success', 4000); setTimeout(function(){getEl('regEmailCode').focus();},100); }
+    else { showError((data.msg || '邮件发送失败，请检查邮箱地址。如邮件服务不可用，请使用手机验证') + (data.diag ? ' [' + data.diag + ']' : '')); }
+  } catch (e) { showError('邮件服务暂时不可用，请稍后重试'); }
+}
+let _contactMethod = 'email';
+function switchMethod(method) {
+  _contactMethod = method;
+  document.querySelectorAll('.method-tab').forEach(function(t){ t.classList.remove('active'); });
+  getEl('tab' + method.charAt(0).toUpperCase() + method.slice(1)).classList.add('active');
+  getEl('emailSection').style.display = method === 'email' ? 'block' : 'none';
+  getEl('phoneSection').style.display = method === 'phone' ? 'block' : 'none';
+}
+async function doRegister(e) {
+  e.preventDefault(); showError('');
+  const username = getEl('regUsername').value.trim();
+  const password = getEl('regPassword').value, refCode = (getEl('refCode')?.value || '').trim();
+  const agreeTerms = getEl('agreeTerms').checked;
+  if (!/^[一-龥a-zA-Z0-9_-]{2,20}$/.test(username)) { showFieldError('regUsername','用户名只能包含中文、字母、数字、下划线和横线，长度2-20个字符'); scrollToFirstError('regUsername'); showError('请检查用户名'); return; } else { showFieldError('regUsername',''); }
+  if (password.length < 6) { showFieldError('regPassword','密码长度至少6位'); scrollToFirstError('regPassword'); showError('密码长度至少6位'); return; } else { showFieldError('regPassword',''); }
+  if (_contactMethod === 'email') {
+    const email = getEl('regEmail').value.trim();
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showFieldError('regEmail','邮箱格式不正确'); scrollToFirstError('regEmail'); showError('邮箱格式不正确'); return; } else { showFieldError('regEmail',''); }
+    if (email && !getEl('regEmailCode').value.trim()) { getEl('emailCodeGroup').style.display='block'; showFieldError('regEmailCode','请先获取并填写邮箱验证码'); scrollToFirstError('regEmailCode'); showError('请先获取验证码'); return; } else { showFieldError('regEmailCode',''); }
+  }
+  if (_contactMethod === 'phone') {
+    const phone = getEl('regPhone').value.trim();
+    if (phone && !/^1\d{10}$/.test(phone)) { showFieldError('regPhone','请输入有效的11位手机号'); scrollToFirstError('regPhone'); showError('手机号格式不正确'); return; } else { showFieldError('regPhone',''); }
+    if (phone && !getEl('regSmsCode').value.trim()) { getEl('smsCodeGroup').style.display='block'; showFieldError('regSmsCode','请先获取并填写短信验证码'); scrollToFirstError('regSmsCode'); showError('请先获取验证码'); return; } else { showFieldError('regSmsCode',''); }
+  }
+  if (!agreeTerms) { showError('请阅读并同意用户协议与免责声明'); scrollToFirstError('agreeTerms'); return; }
+  const btn = getEl('registerBtn'); btn.disabled = true; btn.textContent = '注册中...';
+  try {
+    const fp = typeof Fingerprint !== 'undefined' ? await Fingerprint.get() : '';
+    const regEmail = getEl('regEmail').value.trim();
+    const regPhone = getEl('regPhone').value.trim();
+    const regSmsCode = getEl('regSmsCode').value.trim();
+    const regEmailCode = getEl('regEmailCode').value.trim();
+    const payload = { email: (_contactMethod === 'email' && regEmail) ? regEmail : undefined, username, password, refCode: refCode || undefined, phone: (_contactMethod === 'phone' && regPhone) ? regPhone : undefined, fingerprint: fp };
+    if (_contactMethod === 'email' && regEmail) { payload.emailCode = regEmailCode; }
+    if (_contactMethod === 'phone' && regPhone) { payload.smsCode = regSmsCode; }
+    const result = await Auth.register(payload);
+    btn.disabled = false; btn.textContent = '注册';
+    if (result.success) {
+      try { localStorage.removeItem('invite_ref'); } catch(e) {}
+      location.href = '/index';
+    } else {
+      var errMsg = result.msg || '注册失败，请重试';
+      if (errMsg.indexOf('短信验证码') >= 0) { showFieldError('regSmsCode', errMsg); scrollToFirstError('regSmsCode'); }
+      else if (errMsg.indexOf('邮箱验证码') >= 0) { showFieldError('regEmailCode', errMsg); scrollToFirstError('regEmailCode'); }
+      else if (errMsg.indexOf('用户名') >= 0 && errMsg.indexOf('占用') >= 0) { showFieldError('regUsername', errMsg); scrollToFirstError('regUsername'); }
+      else if (errMsg.indexOf('手机号') >= 0 && errMsg.indexOf('注册') >= 0) { showFieldError('regPhone', errMsg); scrollToFirstError('regPhone'); }
+      else if (errMsg.indexOf('邮箱') >= 0 && errMsg.indexOf('注册') >= 0) { showFieldError('regEmail', errMsg); scrollToFirstError('regEmail'); }
+      else { showError(errMsg); }
+    }
+  } catch (e) { btn.disabled = false; btn.textContent = '注册'; showError('请求失败，请检查网络连接后重试'); }
+}
+async function checkUsername() {
+  const username = getEl('regUsername').value.trim();
+  const errEl = getEl('usernameError'), okEl = getEl('usernameOk');
+  errEl.classList.remove('show'); okEl.classList.remove('show');
+  if (!username || username.length < 2) return;
+  if (!/^[一-龥a-zA-Z0-9_-]{2,20}$/.test(username)) { errEl.textContent = '用户名只能包含中文、字母、数字、下划线和横线'; errEl.classList.add('show'); return; }
+  const exists = await checkAccountExists(username);
+  if (exists) { errEl.textContent = '⚠️ 该用户名已被使用'; errEl.classList.add('show'); }
+  else { okEl.textContent = '✅ 用户名可用'; okEl.classList.add('show'); }
+}
+function showFieldError(fieldId, msg) {
+  var group = getEl(fieldId).closest('.form-group');
+  var existing = group.querySelector('.field-error');
+  if (!existing) { existing = document.createElement('span'); existing.className = 'field-error'; getEl(fieldId).after(existing); }
+  if (msg) { existing.textContent = msg; existing.classList.add('show'); }
+  else { existing.classList.remove('show'); }
+}
+function showError(msg) {
+  const el = getEl('errorMsg');
+  if (msg) { el.textContent = msg; el.style.display = 'block'; showToast(msg, 'error', 4000); }
+  else { el.style.display = 'none'; }
+}
+function scrollToFirstError(id) { var el = getEl(id); if (el) { el.scrollIntoView({behavior:'smooth',block:'center'}); setTimeout(function(){el.focus({preventScroll:true});},350); } }
+
+function resendEmailCode(){openEmailCaptcha()}
+initPage();
+if (typeof Auth !== 'undefined' && Auth.isLoggedIn()) {
+  var rd = new URLSearchParams(window.location.search).get('redirect') || '/index';
+  var u; try { u = new URL(rd, location.origin); } catch(e) { u = null; }
+  window.location.replace((u && u.origin === location.origin) ? u.pathname + u.search + u.hash : '/index');
+}
+</script><script>
+(function(){
+  var m = window.location.search.match(/[?&]ref=([^&]+)/);
+  var ref = '';
+  if (m) { ref = decodeURIComponent(m[1]); try { localStorage.setItem('invite_ref', ref); } catch(e) {} }
+  else { try { ref = localStorage.getItem('invite_ref') || ''; } catch(e) {} }
+  if (ref) { var inp = document.getElementById("refCode"); if (inp) inp.value = ref; }
+})();
+</script><script>
+(async function(){
+  try{var url='/api/agent/site-config'+location.search;var r=await fetch(url);if(!r.ok)return;var d=await r.json();if(!d.success||!d.config||!d.config.is_agent_site)return;var c=d.config;var _ft=(c.features||{});if(!_ft.allow_indexing){var rbt=document.querySelector("meta[name=robots]");if(rbt)rbt.content="noindex, nofollow";else{var rbm=document.createElement("meta");rbm.name="robots";rbm.content="noindex, nofollow";document.head.appendChild(rbm);}}
+    if(_ft.show_home_banner){var hb=document.createElement("div");hb.id="agent-home-banner";hb.style.cssText="background:linear-gradient(135deg,#1E3A8A,#2563EB);color:#fff;text-align:center;padding:10px 16px;font-size:14px;font-weight:500;z-index:99999;position:relative";hb.innerHTML="<a href=https://wuweisixing.cn style=color:#fff;text-decoration:none;display:inline-block>📢 本页为访问入口 · 官方网站：<b>wuweisixing.cn</b>，点击前往 →</a>";document.body.insertBefore(hb,document.body.firstChild);}document.title=(c.site_name||'参军五维测评中心')+' - 注册';var bn=document.querySelector('.navbar-name');if(bn)bn.textContent=c.site_name||'参军五维测评中心';var bh=document.querySelector('.page-banner-content h1');if(bh)bh.textContent=(c.site_name||'参军五维测评中心')+' 注册';   if(c.primary_color&&c.use_brand_color&&/^#[0-9A-Fa-f]{6}$/.test(c.primary_color)){var s=document.createElement('style');s.textContent='.form-card::before,.form-btn{background:linear-gradient(90deg,'+c.primary_color+','+c.primary_color+') !important;color:#fff !important}';document.head.appendChild(s)}if(c.page_title){document.title=c.page_title+' - 注册'}if(c.page_subtitle){var bn2=document.querySelector('.navbar-name');if(bn2)bn2.textContent=c.page_subtitle}if(c.shop_url&&/^https:\/\//.test(c.shop_url)){var buyLinks=document.querySelectorAll('.form-links a,.sms-row a,.btn-code');buyLinks.forEach(function(a){if(a.textContent.indexOf('正式码')>=0||a.textContent.indexOf('获取')>=0){a.href=c.shop_url;a.style.background='linear-gradient(135deg,#2E7D32,#1B5E20)';a.style.color='#fff';a.style.padding='10px 20px';a.style.borderRadius='8px';a.style.display='inline-block';a.style.textDecoration='none';a.style.fontWeight='700'}})}
+}catch(e){}
+})();
+</script><script>if("serviceWorker"in navigator){navigator.serviceWorker.register("/app/pwa/sw.js",{scope:"/"}).then(r=>r.update()).catch(e=>void("SW注册失败",e))}if(/ip(hone|od|ad)/i.test(navigator.userAgent)&&!("standalone"in navigator)&&!localStorage.getItem("_iosPwaHint")){var d=document.createElement("div");d.id="ios-pwa-hint";d.innerHTML="<span>📱</span><span>点击下方分享按钮 ⎋ → 添加到主屏幕</span><button id=\"iosPwaClose\" style=\"background:none;border:none;color:#aaa;font-size:18px;cursor:pointer;padding:2px 8px\">✕</button>";Object.assign(d.style,{position:"fixed",bottom:"20px",left:"10px",right:"10px",zIndex:99999,background:"rgba(15,23,42,.95)",backdropFilter:"blur(12px)",color:"#fff",padding:"12px 16px",borderRadius:"12px",fontSize:"14px",display:"flex",alignItems:"center",gap:"8px",boxShadow:"0 4px 20px rgba(0,0,0,.3)",border:"1px solid rgba(255,255,255,.1)"});document.body.appendChild(d);document.getElementById("iosPwaClose").onclick=function(){d.remove();localStorage.setItem("_iosPwaHint","1")};setTimeout(function(){d.style.transition="opacity .5s";d.style.opacity="1"},1e3)}</script><script>(function(){
+function _msg(){var b=document.getElementById('errorMsg');if(!b)return;b.style.display='block';b.style.background='#FFF3F3';b.style.border='1px solid #F5C2C7';b.style.color='#B42318';b.style.padding='10px 12px';b.style.borderRadius='8px';b.textContent='系统维护中，暂时关闭新用户注册通道，请稍后再试。';}
+function grey(){window.__regClosed=true;var st=document.createElement('style');st.textContent='.reg-closed-disabled{opacity:.45 !important;filter:grayscale(.35);cursor:not-allowed !important;pointer-events:none !important}';document.head.appendChild(st);['tabEmail','tabPhone','tabNone','sendEmailCodeBtn','sendCodeBtn','registerBtn'].forEach(function(id){var el=document.getElementById(id);if(el){el.disabled=true;el.classList.add('reg-closed-disabled');el.style.opacity='.45';el.style.cursor='not-allowed';el.style.pointerEvents='none';}});['regUsername','regPassword','regEmail','regPhone','regEmailCode','regSmsCode'].forEach(function(id){var el=document.getElementById(id);if(el){el.readOnly=true;el.style.background='#f3f4f6';}});_msg();}
+['switchMethod','phoneSendCode','emailSendCode','doRegister','openEmailCaptcha','resendEmailCode'].forEach(function(fn){var orig=window[fn];if(typeof orig==='function'){window[fn]=function(){if(window.__regClosed){_msg();return;}return orig.apply(this,arguments);};}});
+try{fetch('/api/site-status',{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){if(d&&d.success&&d.registration_disabled)grey();}).catch(function(){});}catch(e){}
+})();</script></body></html>

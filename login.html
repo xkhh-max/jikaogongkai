@@ -1,0 +1,465 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><meta name="theme-color" content="#0F172A"><title>五维测评系统 - 登录-参军机考心理适应能力模拟器</title><meta name="description" content="wuweisixing五维四型测评系统（wuweisixing.cn）：登录青少年参军五维测评中心，访问心理测评、语言能力、数学推理、适应能力及SBTI人格测试等综合评估系统。"><meta name="keywords" content="wuweisixing,五维四型,五维测评系统,征兵机考,心理测试,役前训练,体能评分,测试题库,入伍,当兵,应征青年,职业适应性,参军测评,登录,参军能力评估,心理测评,MMPI,入伍测试"><meta property="og:title" content="五维测评系统 - 登录-参军机考心理适应能力模拟器"><meta property="og:description" content="登录青少年参军五维测评中心，访问心理测评、语言能力、数学推理等综合评估系统。"><meta property="og:image" content="https://wuweisixing.cn/assets/og-image.png"><meta property="og:url" content="https://wuweisixing.cn/login.html"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><link rel="canonical" href="https://wuweisixing.cn/login.html"><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.png"><link rel="icon" href="/assets/favicon.png"><link rel="stylesheet" href="css/style.d61d4bb8.css"><style>
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+html{overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+
+:root{
+
+  --primary:#0F172A;--primary-light:#1E3A8A;
+
+  --accent:#3B82F6;--accent-dark:#1E40AF;
+
+  --gold:#D4A843;--gold-light:#E8C96A;
+
+  --success:#22C55E;
+
+  --bg:#F8FAFC;--card:#FFFFFF;
+
+  --text:#1E293B;--text-light:#64748B;--text-lighter:#94A3B8;
+
+  --border:#E2E8F0;
+
+  --radius:16px;--radius-sm:10px;--radius-lg:24px;
+
+  --shadow:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
+
+  --shadow-md:0 4px 20px rgba(0,0,0,.08);
+
+  --shadow-lg:0 10px 40px rgba(0,0,0,.12);
+
+  --header-h:56px;
+
+}
+
+[data-theme="dark"]{--primary:#5A9CFF;--primary-light:#3A7CDF;--accent:#5A9CFF;--accent-dark:#3A7CDF;--text:#e0e0e0;--text-light:#aaa;--text-lighter:#888;--bg:#1a1a2e;--card:#222238;--border:#2e2e42}
+
+[data-theme="green"]{--primary:#3C6B3C;--primary-light:#2A4A2A;--accent:#5A8A5A;--accent-dark:#3A6A3A;--bg:#EFF3EF;--card:#fff;--border:#C5D2C5}
+
+[data-theme="wechat"]{--primary:#07C160;--primary-light:#059A4A;--accent:#07C160;--accent-dark:#059A4A;--bg:#F0F7F2;--card:#fff;--border:#BFDFC8}
+
+[data-theme="pink"]{--primary:#C47888;--primary-light:#A05868;--accent:#E8A0B0;--accent-dark:#C47888;--bg:#FDF5F7;--card:#fff;--border:#E5CFD5}
+
+body{font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Source Han Sans CN','Noto Sans CJK SC',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
+
+
+
+/* Navbar */
+
+.navbar{position:fixed;top:max(0px, env(safe-area-inset-top, 0px));left:0;right:0;height:var(--header-h);background:rgba(15,23,42,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.06);z-index:1000;display:flex;align-items:center;padding:0 16px;justify-content:space-between}
+
+.navbar-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+
+.navbar-logo{width:32px;height:32px;border-radius:8px;object-fit:cover}
+
+.navbar-name{font-size:15px;font-weight:700;color:#fff;letter-spacing:1px}
+
+.navbar-right{display:flex;align-items:center;gap:8px}
+
+.navbar-right a{font-size:13px;padding:7px 14px;border-radius:8px;text-decoration:none;transition:all .2s;font-weight:500}
+
+.btn-login-nav{color:#fff;border:1px solid rgba(255,255,255,.25);background:transparent}
+
+.btn-reg-nav{background:linear-gradient(135deg,var(--accent),var(--accent-dark));color:#fff;border:none;font-weight:600}
+
+
+
+/* Banner */
+
+.back-banner{margin-top:calc(var(--header-h) + env(safe-area-inset-top, 0px));background:linear-gradient(135deg,rgba(59,130,246,.06),rgba(212,168,67,.04));border-bottom:1px solid var(--border);padding:10px 16px;text-align:center}
+
+.back-banner a{font-size:13px;color:var(--accent);text-decoration:none;font-weight:500;transition:color .2s}
+.back-home-btn{display:inline-block;padding:8px 22px;border-radius:8px;font-size:14px;font-weight:600;background:linear-gradient(135deg,var(--accent),var(--accent-dark));color:#fff !important;box-shadow:0 2px 8px rgba(59,130,246,.25)}
+
+.back-banner a:hover{color:var(--accent-dark)}
+
+
+
+/* Page wrapper */
+
+.page-wrapper{flex:1;display:flex;justify-content:center;align-items:center;padding:32px 16px 48px;min-height:calc(100vh - 56px)}
+
+
+
+/* Form card */
+
+.form-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-lg);padding:40px 28px;width:100%;max-width:440px;border:1px solid var(--border);position:relative;overflow:hidden}
+
+.form-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--accent),var(--gold));opacity:0;transition:opacity .3s}.form-card:hover::before{opacity:1}
+
+.form-card-icon{width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent-dark));display:flex;align-items:center;justify-content:center;margin:0 auto 18px;box-shadow:0 4px 16px rgba(59,130,246,.3)}
+
+.form-card-icon svg{width:28px;height:28px;fill:#fff}
+
+.form-card h2{font-size:24px;font-weight:700;color:var(--primary);text-align:center;margin-bottom:6px;letter-spacing:.5px}
+
+.form-subtitle{font-size:13px;color:var(--text-light);text-align:center;margin-bottom:24px;line-height:1.5}
+
+
+
+/* Error/success msg */
+
+.error-msg{padding:10px 14px;border-radius:var(--radius-sm);font-size:13px;margin-bottom:16px;line-height:1.5;background:#fef2f2;color:#991b1b;border-left:4px solid #e74c3c}
+
+.success-msg{background:#f0fdf4;color:#166534;border-left:4px solid #22c55e}
+
+
+
+/* Form elements */
+
+.form-group{margin-bottom:18px}
+
+.form-group label{display:block;font-size:13px;font-weight:600;color:var(--primary);margin-bottom:6px}
+
+.form-group input[type="text"],
+
+.form-group input[type="password"]{width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:var(--radius-sm);font-size:16px;color:var(--text);background:var(--bg);transition:all .2s;outline:none;font-family:inherit}
+
+.form-group input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(59,130,246,.1);background:var(--card-bg)}
+
+.form-group input::placeholder{color:var(--text-lighter)}
+
+.field-hint{font-size:11px;color:var(--text-lighter);margin-top:5px;line-height:1.5}
+
+.field-hint a{color:var(--accent);text-decoration:none}
+
+.field-hint a:hover{text-decoration:underline}
+
+
+
+/* Password row */
+
+.pwd-row{display:flex;align-items:stretch;gap:0}
+
+.pwd-row input{flex:1;border-radius:var(--radius-sm) 0 0 var(--radius-sm)!important;border-right:none!important}
+
+.pwd-toggle{width:48px;min-width:48px;border:1.5px solid var(--border);border-left:none;border-radius:0 var(--radius-sm) var(--radius-sm) 0;background:var(--bg);cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--text-lighter);font-size:12px;transition:.2s;padding:0;user-select:none;font-family:inherit}
+
+.pwd-toggle:hover{background:rgba(59,130,246,.06);color:var(--accent)}
+
+
+
+/* Glass gradient button */
+
+.form-btn{width:100%;padding:14px;border:none;border-radius:var(--radius-sm);font-size:15px;font-weight:600;color:#fff;cursor:pointer;transition:all .3s;margin-top:6px;letter-spacing:1px;font-family:inherit;background:radial-gradient(circle at top left,rgba(255,255,255,.28),transparent 40%),linear-gradient(135deg,#0066cc 0%,#4D9FFF 100%);box-shadow:0 4px 16px rgba(59,130,246,.3)}
+
+.form-btn:hover{box-shadow:0 6px 24px rgba(59,130,246,.4);transform:translateY(-1px)}
+
+.form-btn:active{transform:translateY(0) scale(.98)}
+
+.form-btn:disabled{opacity:.6;cursor:not-allowed;transform:none}
+
+
+
+/* Terms */
+
+.terms-row{text-align:center;margin-top:16px;font-size:12px;color:var(--text-light);line-height:1.6}
+
+.terms-row label{display:inline-flex;align-items:center;gap:5px;cursor:pointer}
+
+.terms-row input[type="checkbox"]{width:14px;height:14px;accent-color:var(--accent)}
+
+.terms-row a{color:var(--accent);text-decoration:none}
+
+.terms-row a:hover{text-decoration:underline}
+
+
+
+/* Device info */
+
+.device-info{text-align:center;margin-top:14px;padding:10px 14px;background:rgba(59,130,246,.04);border:1px solid rgba(59,130,246,.1);border-radius:var(--radius-sm);font-size:12px;color:var(--text-light);line-height:1.6}
+
+.device-info strong{color:var(--accent)}
+.device-warn{margin-top:12px;padding:12px 14px;background:#FFF4E5;border:1px solid #FFC069;border-left:4px solid #E67E22;border-radius:10px;font-size:12px;color:#6D4C00;line-height:1.7}
+.device-warn strong{color:#B45309}
+.device-warn a{color:var(--accent);font-weight:600;text-decoration:underline}
+
+/* Device self-service panel */
+.device-panel-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:100100;display:none;align-items:center;justify-content:center;padding:20px}
+.device-panel-overlay.show{display:flex}
+.device-panel{width:100%;max-width:420px;background:var(--card-bg,#fff);border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.3);overflow:hidden}
+.device-panel-header{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:linear-gradient(135deg,#4F46E5,#7C3AED);color:#fff;flex-shrink:0}
+.device-panel-header h3{margin:0;font-size:15px}
+.device-panel-close{background:rgba(255,255,255,.2);border:none;color:#fff;width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;padding:0}
+.device-panel-body{padding:16px;max-height:72vh;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.dp-tip{font-size:12px;color:var(--text-light);margin-bottom:12px;line-height:1.6}
+.dp-points{display:flex;align-items:center;justify-content:space-between;background:rgba(var(--gold-rgb),.08);border:1px solid rgba(var(--gold-rgb),.2);border-radius:10px;padding:10px 14px;margin-bottom:12px;font-size:13px;color:var(--text)}
+.dp-points-num{font-weight:800;color:var(--gold)}
+.dp-device{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:10px;display:flex;align-items:center;gap:10px;background:var(--card-bg,#fff)}
+.dp-device-icon{font-size:20px;flex-shrink:0}
+.dp-device-info{flex:1;min-width:0}
+.dp-device-name{font-size:13px;font-weight:600;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dp-device-meta{font-size:11px;color:var(--text-lighter);margin-top:2px}
+.dp-unbind{padding:8px 14px;border:none;border-radius:8px;background:linear-gradient(135deg,#EF4444,#DC2626);color:#fff;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap;flex-shrink:0}
+.dp-unbind:disabled{opacity:.5;cursor:not-allowed}
+.dp-redeem{margin-top:12px;border-top:1px solid var(--border);padding-top:12px}
+.dp-redeem-title{font-size:12px;color:var(--text-light);margin-bottom:8px}
+.dp-redeem-row{display:flex;gap:8px}
+.dp-redeem-row input{flex:1;padding:9px 12px;border:1px solid var(--border);border-radius:8px;font-size:14px;outline:none;background:var(--bg);color:var(--text);min-width:0}
+.dp-redeem-row button{padding:9px 16px;border:none;border-radius:8px;background:var(--accent);color:#fff;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap}
+.dp-buy{margin-top:10px;font-size:12px;color:var(--text-light)}
+.dp-buy a{color:var(--accent);font-weight:600;text-decoration:none}
+.dp-redeem-highlight{border-top:2px solid var(--danger);padding-top:12px}
+.dp-redeem-highlight .dp-redeem-title{color:var(--danger);font-weight:600}
+.dp-retry{width:100%;margin-top:12px;padding:12px;border:none;border-radius:10px;background:linear-gradient(135deg,#22C55E,#16a34a);color:#fff;font-size:14px;font-weight:700;cursor:pointer}
+.dp-empty{text-align:center;color:var(--text-lighter);padding:20px 0;font-size:13px}
+.dp-loading{text-align:center;color:var(--text-lighter);padding:20px 0;font-size:13px}
+.dp-msg{font-size:12px;color:var(--danger);margin-top:8px;min-height:16px}
+.dp-msg.ok{color:var(--success)}
+
+
+
+/* Form links */
+
+.form-links{display:flex;justify-content:center;gap:12px;margin-top:20px;font-size:13px;flex-wrap:wrap}
+
+.form-links a{color:var(--accent);text-decoration:none;font-weight:500;transition:color .2s}
+
+.form-links a:hover{color:var(--accent-dark)}
+
+.form-links span{color:var(--text-lighter)}
+
+
+
+/* Footer */
+
+.footer{background:var(--header-start);padding:28px 16px 20px;text-align:center;margin-top:auto}
+
+.footer-inner{max-width:600px;margin:0 auto}
+
+.footer-brand{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px}
+
+.footer-brand .logo{width:28px;height:28px;background:linear-gradient(135deg,var(--accent),var(--accent-dark));border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:14px;color:#fff;font-weight:700}
+
+.footer-brand .name{font-size:14px;font-weight:600;color:#fff;letter-spacing:1px}
+
+.footer-divider{height:1px;background:rgba(255,255,255,.08);margin:14px 0}
+
+.footer-disclaimer{font-size:11px;color:rgba(255,255,255,.3);line-height:1.8;max-width:500px;margin:0 auto 10px}
+
+.footer-copy{font-size:11px;color:rgba(255,255,255,.15)}
+
+</style><link rel="manifest" href="/app/pwa/site.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><script>(function(){window._isWechat=/MicroMessenger|Wechat/i.test(navigator.userAgent);var t=!1,e=!1;try{e=!!sessionStorage.getItem("_wx_skip")}catch{}t&&window._isWechat&&!e&&location.pathname.indexOf("wx-redirect")<0&&location.replace("/wx-redirect.html?to="+encodeURIComponent(location.pathname+location.search))})();
+</script></head><body><script src="/js/bundle.0627626f.js"></script><nav class="navbar"><a href="/home" class="navbar-brand"><img src="/app/icons/icon-192.png" class="navbar-logo" alt=""><span class="navbar-name">五维测评中心</span></a><div class="navbar-right"><a href="/index" style="font-size:12px;color:#999;text-decoration:none;margin-right:12px">旧版首页</a><a href="/home" style="font-size:12px;color:#999;text-decoration:none;margin-right:12px">新版首页</a><a href="/login" class="btn-login-nav">登录</a><a href="/register" class="btn-reg-nav">注册</a></div></nav><div class="back-banner"><a href="/home" class="back-home-btn">← 返回首页</a></div><div class="page-wrapper"><div class="form-card"><div class="form-card-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2a7.2 7.2 0 01-6-3.22c.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08a7.2 7.2 0 01-6 3.22z"/></svg></div><h2>用户登录</h2><p class="form-subtitle">支持用户名、邮箱或手机号登录（推荐使用手机号）</p><div class="error-msg" id="errorMsg" style="display:none"></div><form onsubmit="doLogin(event)"><div class="form-group"><label>用户名 / 邮箱 / 手机号</label><input type="text" id="loginEmail" placeholder="用户名 / 邮箱 / 手机号" required autofocus inputmode="text" autocomplete="username" enterkeyhint="next"><div class="field-hint">输入注册时填写的用户名、邮箱或手机号任一即可</div></div><div class="form-group"><label>密码</label><div class="pwd-row"><input type="password" id="loginPassword" placeholder="请输入密码" autocomplete="current-password" enterkeyhint="go" required><button type="button" class="pwd-toggle" onclick="UiKit.togglePassword(document.getElementById('loginPassword'),this)" tabindex="-1" title="显示密码">显示</button></div><div class="field-hint">密码至少6位 · <a href="/forgot_password">忘记密码？</a></div></div><button type="submit" class="form-btn">登 录</button></form><div class="terms-row"><label><input type="checkbox" id="loginAgreeTerms"><span>登录即表示同意 <a href="/terms" target="_blank">《用户协议》</a>和<a href="/privacy" target="_blank">《隐私政策》</a></span></label></div><div class="device-warn">🔒 <strong>账号使用须知：</strong>账号仅限本人使用（一人一号），严禁出借、合租、转售；此类违规后自动封禁一律不予处理，请勿共用账号。</div><div class="form-links"><a href="/register">注册新账号</a><span>|</span><a href="/forgot_password">忘记密码</a><span>|</span><a href="/index">返回旧首页</a></div></div></div><div class="footer"><p>2027五维模拟测评系统版权所有</p><p style="color:var(--text-light);font-size:11px;margin-top:6px"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener" style="color:var(--text-light);text-decoration:none">苏ICP备2026054342号</a></p><p style="color:var(--text-light);font-size:12px;margin-top:4px;line-height:1.6">本站/软件所有开发和运营人员都是退伍军人，是收集以网络和ai公开资料相关内容制作整理的能力测评与训练辅助工具，不属于、不参与任何征兵审核及录取工作，仅中国境内网络可访问，测评结果仅供参考。</p><p style="color:var(--text-light);font-size:11px;margin-top:6px;line-height:1.6">本站内容仅供个人学习交流内部使用，包含不限于ai生成、整理、收集网络公开题库，如有侵权请联系，并请在下载查看等操作后24小时内删除</p><p style="color:var(--text-light);font-size:11px;margin-top:8px;line-height:1.6;border-top:1px solid rgba(0,0,0,.08);padding-top:8px"><strong>⚠️ 版权声明：</strong>本平台全部内容（包括但不限于题库、测评算法、页面设计）均受著作权法保护。未经授权，禁止任何形式的复制、转载、摘编、建立镜像或用于商业用途。侵权必究。｜<a href="/copyright" style="color:var(--accent);text-decoration:underline">版权声明</a></p></div><div class="fb-wrap" id="fbWrap" style="display:none"><button class="fb-btn" id="fbBtn" title="帮助与反馈"><span class="fb-badge"></span>💬</button></div><div class="fb-modal" id="fbModal"><div class="fb-header"><h3>💬 帮助与反馈</h3><button class="fb-close" onclick="toggleFB()">✕</button></div><div class="fb-tabs"><button class="fb-tab active" onclick="switchFBTab('feedback',this)">问题反馈</button><button class="fb-tab" onclick="switchFBTab('help',this)">客服帮助</button></div><div class="fb-body"><div id="fbFeedback"><h4>提交问题反馈</h4><div id="fbFeedbackContent"></div></div><div id="fbHelp" class="fb-hidden"><h4>在线客服</h4><div id="fbHelpContent"></div></div></div></div><div class="device-panel-overlay" id="devicePanelOverlay" onclick="if(event.target===this)closeDevicePanel()"><div class="device-panel"><div class="device-panel-header"><h3>🔐 设备管理</h3><button class="device-panel-close" onclick="closeDevicePanel()" aria-label="关闭">✕</button></div><div class="device-panel-body" id="devicePanelBody"><div class="dp-loading">加载中...</div></div></div></div></div><script>
+
+if (Auth.isLoggedIn()) {
+
+  Auth.getProfile().then(function(p) {
+
+    if (p) { location.href = '/index'; }
+
+  });
+
+}
+
+(function(){var k=localStorage.getItem("miltest_kicked");if(k==="1"){var el=document.getElementById("errorMsg");el.textContent="您的账号已在其他设备登录，当前会话已失效，请重新登录。";el.style.display="block";localStorage.removeItem("miltest_kicked");}})();
+
+var loginFingerprint = '';
+
+var loginFingerprintPromise = (async function() { try { return await Fingerprint.get(); } catch(e) { return ''; } })();
+
+
+
+async function doLogin(e) {
+
+  e.preventDefault();
+
+  if (!document.getElementById('loginAgreeTerms').checked) {
+
+    showLoginError('请先阅读并同意用户协议与免责声明');
+
+    return;
+
+  }
+
+  var email = document.getElementById('loginEmail').value.trim();
+
+  if (email.includes('@')) email = email.toLowerCase();
+
+  var password = document.getElementById('loginPassword').value;
+
+  if (!email || !password) { showLoginError('请填写邮箱/手机号和密码'); return; }
+
+  var btn = document.querySelector('.form-btn');
+
+  btn.disabled = true;
+
+  btn.textContent = '登录中...';
+
+  loginFingerprint = await loginFingerprintPromise;
+
+  var result = await Auth.login(email, password, loginFingerprint, '');
+
+  btn.disabled = false;
+
+  btn.textContent = '登 录';
+
+  if (result.success) {
+
+    showLoginSuccess('登录成功，正在跳转...');
+
+    var params = new URLSearchParams(location.search);
+
+    var redirect = params.get('redirect') || 'index.html';
+
+    var safeRedirect = 'index.html';
+    try { var u = new URL(redirect, location.origin); safeRedirect = u.origin === location.origin ? u.pathname + u.search + u.hash : 'index.html'; } catch(e) {}
+
+    if (result.expired && typeof showExpiredPrompt === 'function') {
+      showExpiredPrompt();
+    }
+
+    setTimeout(function() { location.href = safeRedirect; }, 500);
+
+  } else {
+
+    showLoginError(result.msg);
+
+    if (result.code === 'DEVICE_LIMIT') {
+
+      openDevicePanel(email, password);
+
+    }
+
+  }
+
+}
+
+function showLoginError(msg) {
+
+  var el = document.getElementById('errorMsg');
+
+  el.textContent = msg;
+
+  el.className = 'error-msg';
+
+  el.style.display = 'block';
+
+}
+
+function showLoginSuccess(msg) {
+
+  var el = document.getElementById('errorMsg');
+
+  el.textContent = msg;
+
+  el.className = 'error-msg success-msg';
+
+  el.style.display = 'block';
+
+}
+
+var UNBIND_COST = 100;
+var _dpEmail = '';
+var _dpPassword = '';
+function _dpEsc(t) { if (!t) return ''; return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function openDevicePanel(email, password) {
+  _dpEmail = email; _dpPassword = password;
+  var ov = document.getElementById('devicePanelOverlay');
+  if (ov) ov.classList.add('show');
+  loadDevices();
+}
+function closeDevicePanel() {
+  var ov = document.getElementById('devicePanelOverlay');
+  if (ov) ov.classList.remove('show');
+  _dpEmail = ''; _dpPassword = '';
+}
+function _dpMsg(text, ok) {
+  var m = document.getElementById('dpMsg');
+  if (!m) return;
+  m.textContent = text || '';
+  m.className = 'dp-msg' + (ok ? ' ok' : '');
+}
+function loadDevices() {
+  var body = document.getElementById('devicePanelBody');
+  if (!body) return;
+  body.innerHTML = '<div class="dp-loading">加载中...</div>';
+  fetch('/api/auth/device-manage', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ email: _dpEmail, password: _dpPassword }) })
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if (!d.success) { body.innerHTML = '<div class="dp-empty">' + _dpEsc(d.msg || '加载失败') + '</div>'; return; }
+      renderDevices(d);
+    })
+    .catch(function(){ body.innerHTML = '<div class="dp-empty">网络异常，请稍后重试</div>'; });
+}
+function renderDevices(d) {
+  var body = document.getElementById('devicePanelBody');
+  if (!body) return;
+  var html = '<div class="dp-tip">检测到该账号近期登录频繁或设备数量较多，已临时暂停登录。可在此查看设备、自助解绑（每次消耗 <strong>' + UNBIND_COST + '</strong> 积分）或兑换积分后重试。<br><span style="color:#B45309;font-weight:600">🔒 严禁出借/合租/转售账号，此类情况一律不予处理。</span></div>';
+  html += '<div class="dp-points"><span>当前积分</span><span class="dp-points-num">⭐ ' + (d.points||0) + '</span></div>';
+  if (!d.devices || d.devices.length === 0) {
+    html += '<div class="dp-empty">暂无可管理设备</div>';
+  } else {
+    for (var i = 0; i < d.devices.length; i++) {
+      var dev = d.devices[i];
+      var meta = (dev.last_login ? '最近登录 ' + chinatime(dev.last_login).slice(0,16) : '最近登录：未知') + (dev.is_active ? ' · 在线' : '');
+      html += '<div class="dp-device"><div class="dp-device-icon">' + (dev.is_active ? '🟢' : '💻') + '</div><div class="dp-device-info"><div class="dp-device-name">' + _dpEsc(dev.device_name || ('设备 ' + (i+1))) + '</div><div class="dp-device-meta">' + _dpEsc(meta) + '</div></div><button class="dp-unbind" onclick="unbindDevice(' + dev.id + ', this)">解绑(' + UNBIND_COST + '积分)</button></div>';
+    }
+  }
+  var needPoints = (d.points||0) < UNBIND_COST;
+  html += '<div class="dp-redeem' + (needPoints ? ' dp-redeem-highlight' : '') + '"><div class="dp-redeem-title">' + (needPoints ? '⚠️ 积分不足，兑换积分卡后可解绑：' : '积分不足？兑换积分卡：') + '</div><div class="dp-redeem-row"><input type="text" id="dpCode" placeholder="输入积分卡密" autocomplete="off" enterkeyhint="done"><button onclick="redeemPoints()">兑换</button></div><div class="dp-buy">还没有积分卡？<a href="https://hsfaka.cn/item/zy0bt8" target="_blank" rel="noopener">去购买积分卡 →</a> <span style="font-size:11px;color:var(--text-light);margin-top:6px;display:block">购买后拿到积分卡密，回到本页输入兑换即可解绑设备</span></div></div>';
+  html += '<div class="dp-msg" id="dpMsg"></div>';
+  if (d.devices && d.devices.length < (d.limit||0)) {
+    html += '<button class="dp-retry" onclick="retryLogin()">✅ 已空出设备，点此重新登录</button>';
+  }
+  body.innerHTML = html;
+}
+function retryLogin() {
+  closeDevicePanel();
+  var form = document.querySelector('form');
+  if (!form) return;
+  var ok = document.getElementById('loginAgreeTerms');
+  if (ok && !ok.checked) ok.checked = true;
+  try { form.requestSubmit(); } catch(e) { form.dispatchEvent(new Event('submit', { cancelable: true })); }
+}
+function unbindDevice(id, btn) {
+  btn.disabled = true; btn.textContent = '解绑中...';
+  _dpMsg('');
+  fetch('/api/auth/device-unbind', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ email: _dpEmail, password: _dpPassword, deviceId: id }) })
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if (d.success) {
+        _dpMsg('解绑成功，剩余 ' + d.points + ' 积分', true);
+        if (window.showToast) showToast('解绑成功', 'success');
+        loadDevices();
+      } else {
+        btn.disabled = false; btn.textContent = '解绑(' + UNBIND_COST + '积分)';
+        _dpMsg(d.msg || '解绑失败');
+        if (d.code === 'INSUFFICIENT_POINTS') { var re = document.querySelector('.dp-redeem'); if (re) re.classList.add('dp-redeem-highlight'); var p = document.getElementById('dpCode'); if (p) p.focus(); }
+        if (d.code === 'UNBIND_LIMITED' && window.showToast) showToast(d.msg || '解绑过于频繁，请30分钟后再试', 'error');
+      }
+    })
+    .catch(function(){ btn.disabled = false; btn.textContent = '解绑(' + UNBIND_COST + '积分)'; _dpMsg('网络异常，请稍后重试'); });
+}
+function redeemPoints() {
+  var inp = document.getElementById('dpCode');
+  var code = inp ? inp.value.trim() : '';
+  if (!code) { _dpMsg('请输入积分卡密'); return; }
+  var btn = document.querySelector('.dp-redeem-row button');
+  if (btn) { btn.disabled = true; }
+  _dpMsg('');
+  fetch('/api/auth/points-redeem', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ email: _dpEmail, password: _dpPassword, code: code }) })
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if (btn) btn.disabled = false;
+      if (d.success) {
+        _dpMsg('兑换成功，当前积分 ' + d.points, true);
+        if (window.showToast) showToast('兑换成功', 'success');
+        loadDevices();
+      } else {
+        _dpMsg(d.msg || '兑换失败');
+      }
+    })
+    .catch(function(){ if (btn) btn.disabled = false; _dpMsg('网络异常，请稍后重试'); });
+}
+
+initPage();
+try { if (sessionStorage.getItem("login_redirect_toast") === "1") { sessionStorage.removeItem("login_redirect_toast"); showToast("请先登录","info",3000); } } catch(e) {}
+
+
+
+var fbWrap = document.getElementById('fbWrap');
+
+if (fbWrap) fbWrap.style.display = '';
+
+</script><script>if("serviceWorker"in navigator){navigator.serviceWorker.register("/app/pwa/sw.js",{scope:"/"}).then(r=>r.update()).catch(e=>void("SW注册失败",e))}if(/ip(hone|od|ad)/i.test(navigator.userAgent)&&!("standalone"in navigator)&&!localStorage.getItem("_iosPwaHint")){var d=document.createElement("div");d.id="ios-pwa-hint";d.innerHTML="<span>📱</span><span>点击下方分享按钮 ⎋ → 添加到主屏幕</span><button id=\"iosPwaClose\" style=\"background:none;border:none;color:#aaa;font-size:18px;cursor:pointer;padding:2px 8px\">✕</button>";Object.assign(d.style,{position:"fixed",bottom:"20px",left:"10px",right:"10px",zIndex:99999,background:"rgba(15,23,42,.95)",backdropFilter:"blur(12px)",color:"#fff",padding:"12px 16px",borderRadius:"12px",fontSize:"14px",display:"flex",alignItems:"center",gap:"8px",boxShadow:"0 4px 20px rgba(0,0,0,.3)",border:"1px solid rgba(255,255,255,.1)"});document.body.appendChild(d);document.getElementById("iosPwaClose").onclick=function(){d.remove();localStorage.setItem("_iosPwaHint","1")};setTimeout(function(){d.style.transition="opacity .5s";d.style.opacity="1"},1e3)}</script></body></html>

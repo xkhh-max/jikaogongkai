@@ -1,0 +1,26 @@
+{
+  "name": "五维测评系统",
+  "short_name": "五维测评",
+  "description": "基于MMPI等标准的职业适应性模拟测评系统，帮助了解自身能力结构，发现短板，明确提升方向。",
+  "start_url": "/home.html",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#0F172A",
+  "orientation": "portrait-primary",
+  "categories": ["education", "lifestyle"],
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "/app/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/app/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
